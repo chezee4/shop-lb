@@ -1,7 +1,7 @@
 import { v4 as uuidv4 } from "uuid";
 import Facebook from "../../../public/icons/facebook.svg";
-import Instagram from "../../../public/icons/instagram.svg";
-import Snapchat from "../../../public/icons/snapchat.svg";
+import Instagram from "../../../public/icons/instagram.png";
+import Snapchat from "../../../public/icons/snapchat.png";
 
 export const messageLinkt = [
   { title: "facebook", icon: Facebook, link: "ggg", id: uuidv4() },

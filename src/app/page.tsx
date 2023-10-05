@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="w-full pt-20 flex gap-4">
       <aside className="w-[20%] min-w-[250px]">
-        <div className=""><Filter/></div>
+        <Filter/>
       </aside>
       <div className="w-[80%]">
         <div className="mb-10">
@@ -18,13 +18,7 @@ export default function Home() {
                 <span>Women</span> <button>x</button>
               </div>
               <div className=" cursor-pointer inline-flex gap-x-2 shadow-custom-shadow-md text-sm rounded-[20px] px-4 py-2.5 mr-2">
-                <span>Women</span> <button>x</button>
-              </div>
-              <div className=" cursor-pointer inline-flex gap-x-2 shadow-custom-shadow-md text-sm rounded-[20px] px-4 py-2.5 mr-2">
-                <span>Women</span> <button>x</button>
-              </div>
-              <div className="cursor-pointer inline-flex gap-x-2 shadow-custom-shadow-md text-sm rounded-[20px] px-4 py-2.5 mr-2">
-                <span>Women</span> <button>x</button>
+                <span>Men</span> <button>x</button>
               </div>
             </div>
           </div>

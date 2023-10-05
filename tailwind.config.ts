@@ -24,11 +24,18 @@ const config: Config = {
       borderColor:{
         "custom-border-cart": "rgba(0, 0, 0, 0.17)",
         "custom-orange": "#FD7E14",
-        "custom-blue-hover": "#0A58CA"
+        "custom-blue-hover": "#0A58CA",
+        "hr-bg-color": "rgba(33, 37, 41, 0.25)"
       },
       flex: {
         "2": "0 0 104px"
       },
+      screens: {
+        'mm': '480px', 
+      },
+      accentColor:{
+        "custom-orange": "#FD7E14"
+      }
     },
   },
   plugins: [],
