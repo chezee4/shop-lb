@@ -8,10 +8,26 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+      backgroundColor: {
+        "custom-orange": "#FD7E14",
+        "custom-blue-hover": "#0B5ED7",
+        "footer-bg-color": "#F8F9FA"
+      },
+      textColor: {
+        "custom-orange": "#FD7E14",
+        "card-color-text": "#212529",
+        "placeholder-text": "#6C757D"
+      },
+      boxShadow:{
+        "custom-shadow-md": "0px 8px 16px 0px rgba(0, 0, 0, 0.15)",
+      },
+      borderColor:{
+        "custom-border-cart": "rgba(0, 0, 0, 0.17)",
+        "custom-orange": "#FD7E14",
+        "custom-blue-hover": "#0A58CA"
+      },
+      flex: {
+        "2": "0 0 104px"
       },
     },
   },
