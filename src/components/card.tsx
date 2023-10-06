@@ -12,24 +12,24 @@ export default function Card({ title, img, price }: CardProps) {
       <div>
         <Image src={img} alt={title} className=" object-cover w-full" />
       </div>
-      <div className="p-4">
-        <h4 className="leading-6 font-bold text-[13px] sm:text-[16px] md-text-[20px]">{title}</h4>
-        <span className="text-[14.4px]">${price}.00</span>
-        <div className="flex gap-3 mb-5 mt-4">
+      <div className="py-[10px] px-2 md:p-4 ">
+        <h4 className="leading-6 font-bold  text-[11px] mm:text-[16px] md:text-[20px]">{title}</h4>
+        <span className="text-[15px]">${price}.00</span>
+        <div className="flex gap-1 mm:gap-3 mb-5 mt-4">
           {size.map((size, index) => (
             <button
               key={index}
-              className=" rounded-sm border-[0.9px] border-custom-orange w-8 h-8 text-custom-orange text-[10px] hover:border-custom-blue-hover active::border-custom-blue-hover hover:bg-custom-blue-hover active:bg-custom-blue-hover sm:text-[14.4px] md:text-base transition-all ease-linear duration-200"
+              className=" rounded-sm border-[0.9px] border-custom-orange w-7 h-7 mm:w-8 mm:h-8 sm:w-8 sm:h-8 text-custom-orange text-[12px] hover:border-custom-blue-hover active::border-custom-blue-hover hover:bg-custom-blue-hover active:bg-custom-blue-hover mm:text-[14.4px] sm:text-[14.4px] md:text-base transition-all ease-linear duration-200"
             >
               {size}
             </button>
           ))}
         </div>
         <div className="flex justify-between items-center">
-          <button className=" tracking-widest leading-[1.2rem] px-3 py-1 bg-custom-orange hover:bg-custom-blue-hover active:bg-custom-blue-hover text-white rounded-[4px] text-[10px] sm:text-[14.4px] md:text-base transition-all ease-linear duration-200">
+          <button className=" tracking-normal mm:tracking-widest  md:tracking-widest leading-[1.2rem] px-2 mm:px-3 py-1 bg-custom-orange hover:bg-custom-blue-hover active:bg-custom-blue-hover text-white rounded-[4px] text-[11px] mm:text-[14.4px] sm:text-[14.4px] md:text-base transition-all ease-linear duration-200">
             Add to Cart
           </button>
-          <button className=" flex justify-center items-center bg-custom-orange hover:bg-custom-blue-hover active:bg-custom-blue-hover w-9 h-9 rounded-full transition-all ease-linear duration-200">
+          <button className=" flex justify-center items-center bg-custom-orange hover:bg-[#5C636A] active:bg-[#5C636A] w-8 h-8 mm:w-9 mm:h-9 rounded-full transition-all ease-linear duration-200">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="17"

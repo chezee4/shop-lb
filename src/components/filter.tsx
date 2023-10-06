@@ -4,13 +4,13 @@ import { cn } from "@/lib/utils";
 import { filter } from "./config/filter";
 export default function Filter() {
   return (
-    <div className="mx-auto w-full max-w-md rounded-2xl bg-white p-2 shadow-custom-shadow-md">
-      <Disclosure>
+    <div className="mx-auto max-w-[350px]  sm:max-w-[280px] sm:min-w-[220px] rounded-2xl bg-white p-2 shadow-custom-shadow-md">
+      <Disclosure> 
         {({ open }) => (
           <>
             <Disclosure.Button
               className={cn(
-                "flex w-full justify-between rounded-lg px-4 py-2 mb-0.5 text-left text-sm font-medium text-purple-900 hover:bg-[#FFE5D0] focus:outline-none focus-visible:ring focus-visible:ring-[#FFE5D0] focus-visible:ring-opacity-75 transition-all ease-linear duration-200",
+                "flex w-full justify-between rounded-lg px-4 py-2 mb-0.5 text-black text-left text-sm font-medium  hover:bg-[#FFE5D0] focus:outline-none focus-visible:ring focus-visible:ring-[#FFE5D0]  transition-all ease-linear duration-200",
                 { "bg-[#FFE5D0]": open }
               )}
             >
@@ -31,7 +31,7 @@ export default function Filter() {
                   <>
                     <Disclosure.Button
                       className={cn(
-                        "flex w-full justify-between rounded-lg px-4 py-2 text-left text-sm font-medium text-purple-900 hover:bg-[#FFE5D0] focus:outline-none focus-visible:ring focus-visible:ring-[#FFE5D0] focus-visible:ring-opacity-75 transition-all ease-linear duration-200",
+                        "flex w-full justify-between rounded-lg px-4 py-2 text-left text-sm font-medium text-black hover:bg-[#FFE5D0] focus:outline-none focus-visible:ring focus-visible:ring-[#FFE5D0]  transition-all ease-linear duration-200",
                         { "bg-[#FFE5D0]": open }
                       )}
                     >
@@ -53,10 +53,13 @@ export default function Filter() {
                             key={index}
                             className="flex items-center gap-1 font-medium"
                           >
-                            <input
-                              type="checkbox"
-                              className="w-4 h-4 checked:text-white checked:accent-custom-orange"
-                            />{" "}
+                            <label className="checkbox-container">
+                              <input
+                                className="custom-checkbox"
+                                type="checkbox"
+                              />
+                              <span className="checkmark"></span>
+                            </label>
                             <span>{item}</span>
                           </li>
                         ))}
@@ -70,7 +73,7 @@ export default function Filter() {
                   <>
                     <Disclosure.Button
                       className={cn(
-                        "flex w-full justify-between rounded-lg px-4 py-2 text-left text-sm font-medium text-purple-900 hover:bg-[#FFE5D0] focus:outline-none focus-visible:ring focus-visible:ring-[#FFE5D0] focus-visible:ring-opacity-75 transition-all ease-linear duration-200",
+                        "flex w-full justify-between rounded-lg px-4 py-2 text-left text-sm font-medium text-black hover:bg-[#FFE5D0] focus:outline-none focus-visible:ring focus-visible:ring-[#FFE5D0] focus-visible:ring-opacity-75 transition-all ease-linear duration-200",
                         { "bg-[#FFE5D0]": open }
                       )}
                     >
@@ -92,10 +95,13 @@ export default function Filter() {
                             key={index}
                             className="flex items-center gap-1 font-medium"
                           >
-                            <input
-                              type="checkbox"
-                              className="w-4 h-4 checked:accent-custom-orange checked:text-white"
-                            />{" "}
+                            <label className="checkbox-container">
+                              <input
+                                className="custom-checkbox"
+                                type="checkbox"
+                              />
+                              <span className="checkmark"></span>
+                            </label>
                             <span>{item}</span>
                           </li>
                         ))}

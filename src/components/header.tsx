@@ -19,7 +19,7 @@ export default function Header() {
         <Image src={Logo} alt="Shoply" />
         <nav
           className={cn(
-            "absolute md:static top-[72px] z-50 -right-full h-[90vh] md:h-auto bg-slate-500 md:bg-white  p-5 md:p-0 block md:flex items-center gap-5 transition-all ease-linear duration-300",
+            "absolute md:static top-[72px] z-50 -right-[120%] h-[90vh] md:h-auto bg-slate-500 md:bg-white  p-5 md:p-0 block md:flex items-center gap-5 transition-all ease-linear duration-300",
             {
               "right-0": isOpen,
             }
