@@ -6,11 +6,16 @@ export default function Home() {
   return (
     <div className="w-full pt-20 flex flex-col items-center sm:items-start sm:flex-row gap-4">
       <aside className=" w-full sm:w-[25%] min-w-[220px] ">
-        <Filter/>
+        <Filter />
       </aside>
       <div className="w-full sm:w-[75%]">
         <div className="mb-10">
-          <p className="mb-3">Showing 9 results from total 50 for “shirts”</p>
+          <p className="mb-3">
+            Showing <span className=" font-bold leading-6 text-xl"> 9</span>{" "}
+            results from total
+            <span className=" font-bold leading-6 text-xl"> 50</span> for{" "}
+            <span className=" font-semibold"> “shirts”</span>
+          </p>
           <div className="inline-flex flex-wrap gap-3 mb-4 items-center">
             <span className=" w-[210px] flex-2">Applied Filters:</span>
             <div className=" flex flex-wrap gap-y-4">

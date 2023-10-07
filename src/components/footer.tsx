@@ -1,8 +1,10 @@
 import Image from "next/image";
+
+import Navigate from "./navigate";
 import FooterLogo from "../../public/icons/outfit.svg";
-import Link from "next/link";
-import { messageLinkt } from "./config/message-link";
-import { navigate } from "./config/navigate";
+import MessageLinks from "./message-links";
+
+
 export default function Footer() {
   return (
     <footer className=" bg-footer-bg-color w-full mt-20 ">
@@ -17,27 +19,8 @@ export default function Footer() {
             </p>
           </div>
           <div>
-            <ul className=" flex flex-col mt-8 gap-y-7 sm:flex-row sm:mt-0 sm:grid sm:grid-cols-3 sm:gap-3 justify-items-center grid-rows-2 md:flex md:gap-8 mb-6">
-              {navigate.map((item) => (
-                <li key={item.id}>
-                  <Link href={item.link}>{item.title}</Link>
-                </li>
-              ))}
-            </ul>
-            <ul className="flex gap-6 sm:justify-end">
-              {messageLinkt.map((link) => (
-                <li key={link.id}>
-                  <Link href={link.link}>
-                    <Image
-                      src={link.icon}
-                      alt={link.title}
-                      width={30}
-                      height={30}
-                    />
-                  </Link>
-                </li>
-              ))}
-            </ul>
+           <Navigate/>
+           <MessageLinks/>
           </div>
         </div>
         <hr className=" w-full border-1 border-hr-bg-color" />
