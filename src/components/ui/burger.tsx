@@ -26,6 +26,7 @@ export default function Burger() {
           "inline-block h-[0.15rem] w-6 my-1 rounded-full bg-black "
         )}
       />
+      <span className=" fixed top-0 left-0 h-full w-full bg-transparent z-10"></span>
     </button>
   );
 }

@@ -1,15 +1,15 @@
-import Image from "next/image";
-
 import Navigate from "./navigate";
-import FooterLogo from "../../public/icons/outfit.svg";
 import MessageLinks from "./message-links";
+import Logo from "./ui/logo";
+
+import FooterLogo from "../../public/icons/outfit.svg";
 
 
 export default function Footer() {
   return (
     <footer className=" bg-footer-bg-color w-full mt-20 ">
       <div className="max-w-[1380px] m-auto  pt-8  px-5 sm:px-3 pb-3">
-        <Image src={FooterLogo} alt="FooterLogo" className="mb-4" />
+        <Logo src={FooterLogo} alt="FooterLogo" className="mb-4" />
         <div className=" sm:flex justify-between mb-8">
           <div className=" sm:max-w-[250px] md:max-w-none">
             <p>

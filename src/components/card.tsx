@@ -1,19 +1,35 @@
-import Image from "next/image";
+"use client";
+import Image from "next/image"
+import { motion } from "framer-motion"
+
+import { fadeInAnimationVariantsDynamic } from "@/lib/utils"
 
 type CardProps = {
   title: string;
   img: any;
   price: string;
+  index: number
 };
-export default function Card({ title, img, price }: CardProps) {
+export default function Card({ title, img, price, index }: CardProps) {
   const size = ["S", "M", "L", "XL"];
   return (
-    <div className=" rounded-md border-[0.9px] border-[#00000017] shadow-custom-shadow-md">
+    <motion.div 
+    className=" rounded-md border-[0.9px] border-[#00000017] shadow-custom-shadow-md"
+    variants={fadeInAnimationVariantsDynamic}
+    initial="initial"
+    whileInView="animate"
+    viewport={{
+      once: true,
+    }}
+    custom={index}
+    >
       <div>
         <Image src={img} alt={title} className=" object-cover w-full" />
       </div>
       <div className="py-[10px] px-2 md:p-4 ">
-        <h4 className="leading-6 font-bold  text-[11px] mm:text-[16px] md:text-[20px]">{title}</h4>
+        <h4 className="leading-6 font-bold  text-[11px] mm:text-[16px] md:text-[20px]">
+          {title}
+        </h4>
         <span className="text-[15px]">${price}.00</span>
         <div className="flex gap-1 mm:gap-3 mb-5 mt-4">
           {size.map((size, index) => (
@@ -57,6 +73,6 @@ export default function Card({ title, img, price }: CardProps) {
           </button>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

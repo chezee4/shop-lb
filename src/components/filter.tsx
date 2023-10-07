@@ -1,11 +1,23 @@
 "use client";
 import { Disclosure } from "@headlessui/react";
-import { cn } from "@/lib/utils";
+import { motion } from "framer-motion";
+import { fadeInAnimationVariantsForStatic } from "@/lib/utils";
+
 import { filter } from "./config/filter";
+import { cn } from "@/lib/utils";
+
 export default function Filter() {
   return (
-    <div className="mx-auto max-w-[350px]  sm:max-w-[280px] sm:min-w-[220px] rounded-2xl bg-white p-2 shadow-custom-shadow-md">
-      <Disclosure> 
+    <motion.div
+      className="mx-auto max-w-[350px]  sm:max-w-[280px] sm:min-w-[220px] rounded-2xl bg-white p-2 shadow-custom-shadow-md"
+      variants={fadeInAnimationVariantsForStatic}
+      initial="initial"
+      whileInView="animate"
+      viewport={{
+        once: true,
+      }}
+    >
+      <Disclosure>
         {({ open }) => (
           <>
             <Disclosure.Button
@@ -114,6 +126,6 @@ export default function Filter() {
           </>
         )}
       </Disclosure>
-    </div>
+    </motion.div>
   );
 }

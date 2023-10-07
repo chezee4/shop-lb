@@ -19,7 +19,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={cn("min-h-screen overflow-x-hidden", syne.className)}>
+      <body className={cn("min-h-screen", syne.className)}>
         <Header />
         <main className=" relative max-w-[1380px] m-auto mt-[4rem] px-3">
           <div className=" absolute top-0 left-[12px] flex gap-1">

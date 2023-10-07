@@ -1,10 +1,10 @@
 "use client";
-import Image from "next/image";
 import Link from "next/link";
-import Logo from "../../public/icons/shoply.svg";
+import Logosvg from "../../public/icons/shoply.svg";
 import { Inter } from "next/font/google";
 
 import Burger from "./ui/burger";
+import Logo from "./ui/logo";
 
 import { cn } from "@/lib/utils";
 import { useBurger } from "./context/menu-context";
@@ -14,12 +14,12 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Header() {
   const isOpen = useBurger((state) => state.isOpen);
   return (
-    <header className=" w-full h-[72px]">
+    <header className=" sticky top-0 z-40 bg-white md:static w-full h-[72px]">
       <div className=" flex justify-between max-w-[1380px] px-6 md:px-3 h-full m-auto items-center">
-        <Image src={Logo} alt="Shoply" />
+        <Logo src={Logosvg} alt="Shoply" />
         <nav
           className={cn(
-            "absolute md:static top-[72px] z-50 -right-[120%] h-[90vh] md:h-auto bg-slate-500 md:bg-white  p-5 md:p-0 block md:flex items-center gap-5 transition-all ease-linear duration-300",
+            " fixed md:static top-[72px] z-50 -right-[100%] h-[90vh] md:h-auto bg-slate-500 md:bg-white  p-5 md:p-0 block md:flex items-center gap-5 transition-all ease-linear duration-300",
             {
               "right-0": isOpen,
             }
