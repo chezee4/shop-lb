@@ -31,22 +31,14 @@ export default function AppliedFilter() {
         }}
       >
         <span className=" w-[210px] flex-2">Applied Filters:</span>
-        <motion.div
-          className=" flex flex-wrap gap-y-4"
-          variants={fadeInAnimationVariantsForStatic}
-          initial="initial"
-          whileInView="animate"
-          viewport={{
-            once: true,
-          }}
-        >
+        <div className=" flex flex-wrap gap-y-4">
           <div className=" cursor-pointer inline-flex gap-x-2 shadow-custom-shadow-md text-sm rounded-[20px] px-4 py-2.5 mr-2">
-            <span>Women</span> <button>x</button>
+            <span>Women</span> <button aria-label="delete filter">x</button>
           </div>
           <div className=" cursor-pointer inline-flex gap-x-2 shadow-custom-shadow-md text-sm rounded-[20px] px-4 py-2.5 mr-2">
-            <span>Men</span> <button>x</button>
+            <span>Men</span> <button aria-label="delete filter">x</button>
           </div>
-        </motion.div>
+        </div>
       </motion.div>
     </>
   );

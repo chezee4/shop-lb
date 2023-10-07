@@ -19,20 +19,20 @@ export default function Header() {
         <Logo src={Logosvg} alt="Shoply" />
         <nav
           className={cn(
-            " fixed md:static top-[72px] z-50 -right-[100%] h-[90vh] md:h-auto bg-slate-500 md:bg-white  p-5 md:p-0 block md:flex items-center gap-5 transition-all ease-linear duration-300",
+            " fixed md:static top-[72px] z-50 -right-[110%] h-[90vh] md:h-auto bg-slate-500 md:bg-white  p-5 md:p-0 block md:flex items-center gap-5 transition-all ease-linear duration-300",
             {
               "right-0": isOpen,
             }
           )}
         >
           <ul className="flex flex-col text-white md:text-black md:flex-row text-xl md:text-base mb-5 md:mb-0 gap-5 md:gap-9 md:items-center font-medium">
-            <li>
+            <li className=" hover:text-custom-orange transition-all ease-linear duration-200">
               <Link href="#">Products</Link>
             </li>
-            <li>
+            <li className=" hover:text-custom-orange transition-all ease-linear duration-200">
               <Link href="#">Sale</Link>
             </li>
-            <li>
+            <li className=" hover:text-custom-orange transition-all ease-linear duration-200">
               <Link href="#" className="mr-2 flex items-center gap-3">
                 Cart
                 <span

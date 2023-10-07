@@ -34,18 +34,19 @@ export default function Card({ title, img, price, index }: CardProps) {
         <div className="flex gap-1 mm:gap-3 mb-5 mt-4">
           {size.map((size, index) => (
             <button
+              aria-label={"розмір "+`${size}`}
               key={index}
-              className=" rounded-sm border-[0.9px] border-custom-orange w-7 h-7 mm:w-8 mm:h-8 sm:w-8 sm:h-8 text-custom-orange text-[12px] hover:border-custom-blue-hover active::border-custom-blue-hover hover:bg-custom-blue-hover active:bg-custom-blue-hover mm:text-[14.4px] sm:text-[14.4px] md:text-base transition-all ease-linear duration-200"
+              className=" font-medium rounded-sm border-[0.9px] border-seo-friendly-orange w-7 h-7 mm:w-8 mm:h-8 sm:w-8 sm:h-8 text-seo-friendly-orange text-[12px] hover:border-custom-blue-hover active::border-custom-blue-hover hover:bg-custom-blue-hover active:bg-custom-blue-hover mm:text-[14.4px] sm:text-[14.4px] md:text-base transition-all ease-linear duration-200"
             >
               {size}
             </button>
           ))}
         </div>
         <div className="flex justify-between items-center">
-          <button className=" tracking-normal mm:tracking-widest  md:tracking-widest leading-[1.2rem] px-2 mm:px-3 py-1 bg-custom-orange hover:bg-custom-blue-hover active:bg-custom-blue-hover text-white rounded-[4px] text-[11px] mm:text-[14.4px] sm:text-[14.4px] md:text-base transition-all ease-linear duration-200">
+          <button aria-label="add to cart" className=" tracking-normal mm:tracking-widest  md:tracking-widest leading-[1.2rem] px-2 mm:px-3 py-1 bg-seo-friendly-orange hover:bg-custom-blue-hover active:bg-custom-blue-hover text-white rounded-[4px] text-[11px] mm:text-[14.4px] sm:text-[14.4px] md:text-base transition-all ease-linear duration-200">
             Add to Cart
           </button>
-          <button className=" flex justify-center items-center bg-custom-orange hover:bg-[#5C636A] active:bg-[#5C636A] w-8 h-8 mm:w-9 mm:h-9 rounded-full transition-all ease-linear duration-200">
+          <button aria-describedby="add to category liked " className=" flex justify-center items-center bg-seo-friendly-orange hover:bg-[#5C636A] active:bg-[#5C636A] w-8 h-8 mm:w-9 mm:h-9 rounded-full transition-all ease-linear duration-200">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="17"

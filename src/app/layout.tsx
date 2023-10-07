@@ -22,8 +22,8 @@ export default function RootLayout({
       <body className={cn("min-h-screen", syne.className)}>
         <Header />
         <main className=" relative max-w-[1380px] m-auto mt-[4rem] px-3">
-          <div className=" absolute top-0 left-[12px] flex gap-1">
-            <Link href="#" className=" text-custom-orange">
+          <div className=" absolute top-0 left-[12px] flex gap-1 font-medium">
+            <Link href="#" className=" text-seo-friendly-orange ">
               Home
             </Link>
             /<Link href="#">Products</Link>
