@@ -46,7 +46,7 @@ export default function Card({ title, img, price, index }: CardProps) {
           <button aria-label="add to cart" className=" tracking-normal mm:tracking-widest  md:tracking-widest leading-[1.2rem] px-2 mm:px-3 py-1 bg-seo-friendly-orange hover:bg-custom-blue-hover active:bg-custom-blue-hover text-white rounded-[4px] text-[11px] mm:text-[14.4px] sm:text-[14.4px] md:text-base transition-all ease-linear duration-200">
             Add to Cart
           </button>
-          <button aria-describedby="add to category liked " className=" flex justify-center items-center bg-seo-friendly-orange hover:bg-[#5C636A] active:bg-[#5C636A] w-8 h-8 mm:w-9 mm:h-9 rounded-full transition-all ease-linear duration-200">
+          <button aria-label="add to category liked " aria-describedby="add to category liked " className=" flex justify-center items-center bg-seo-friendly-orange hover:bg-[#5C636A] active:bg-[#5C636A] w-8 h-8 mm:w-9 mm:h-9 rounded-full transition-all ease-linear duration-200">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="17"
