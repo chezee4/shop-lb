@@ -19,7 +19,7 @@ export default function Header() {
         <Logo src={Logosvg} alt="Shoply" />
         <nav
           className={cn(
-            " fixed md:static top-[72px] z-50 -right-[110%] h-[90vh] md:h-auto bg-slate-500 md:bg-white  p-5 md:p-0 block md:flex items-center gap-5 transition-all ease-linear duration-300",
+            " fixed md:static top-[72px] z-50 -right-[110%] h-[100dvh] md:h-auto bg-slate-500 md:bg-white  p-5 md:p-0 block md:flex items-center gap-5 transition-all ease-linear duration-300",
             {
               "right-0": isOpen,
             }
@@ -32,12 +32,12 @@ export default function Header() {
             <li className=" hover:text-custom-orange transition-all ease-linear duration-200">
               <Link href="#">Sale</Link>
             </li>
-            <li className=" hover:text-custom-orange transition-all ease-linear duration-200">
+            <li className=" hover:text-custom-orange transition-all ease-linear duration-200 group">
               <Link href="#" className="mr-2 flex items-center gap-3">
                 Cart
                 <span
                   className={cn(
-                    " flex justify-center items-center w-7 h-7 text-base md:w-9 md:h-9 bg-custom-orange text-white rounded-[36px] font-semibold",
+                    " flex justify-center items-center w-7 h-7 text-base md:w-9 md:h-9 bg-seo-friendly-orange group-hover:bg-custom-orange text-white rounded-[36px] font-semibold transition-all ease-linear duration-200",
                     inter.className
                   )}
                 >
@@ -52,7 +52,7 @@ export default function Header() {
               placeholder="Search"
               className=" w-48 px-1.5 py-1.5 rounded border border-[#CED4DA] placeholder:text-placeholder-text outline-none"
             />
-            <button className=" bg-custom-orange font-semibold rounded  shadow-custom-shadow-md text-white px-3 py-1.5">
+            <button className=" bg-seo-friendly-orange hover:bg-orange-600 font-semibold rounded  shadow-custom-shadow-md text-white px-3 py-1.5 transition-all ease-linear duration-200">
               Search
             </button>
           </div>

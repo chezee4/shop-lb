@@ -5,6 +5,9 @@ export default function Burger() {
   const {isOpen, setIsOpen} = useBurger(); 
   return (
     <button
+      title="burder"
+      aria-labelledby="burger menu"
+      aria-describedby="burger menu"
        aria-label="burger menu"
       className="md:hidden flex flex-col h-10 w-12 border border-black rounded justify-center items-center group"
       onClick={() => setIsOpen()}

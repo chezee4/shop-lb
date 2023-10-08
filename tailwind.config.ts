@@ -10,14 +10,14 @@ const config: Config = {
     extend: {
       backgroundColor: {
         "custom-orange": "#FD7E14",
-        "seo-friendly-orange":"#ff6a00",
+        "seo-friendly-orange":"#CE320B",
         "custom-blue-hover": "#0B5ED7",
         "footer-bg-color": "#F8F9FA"
       },
       textColor: {
         "custom-orange": "#FD7E14",
         "card-color-text": "#212529",
-        "seo-friendly-orange":"#ff6a00",
+        "seo-friendly-orange":"#CE320B",
         "placeholder-text": "#6C757D"
       },
       boxShadow:{
@@ -26,7 +26,7 @@ const config: Config = {
       borderColor:{
         "custom-border-cart": "rgba(0, 0, 0, 0.17)",
         "custom-orange": "#FD7E14",
-        "seo-friendly-orange":"#ff6a00",
+        "seo-friendly-orange":"#CE320B",
         "custom-blue-hover": "#0A58CA",
         "hr-bg-color": "rgba(33, 37, 41, 0.25)"
       },
@@ -37,7 +37,7 @@ const config: Config = {
         'mm': '480px', 
       },
       accentColor:{
-        "custom-orange": "#FD7E14"
+        "custom-orange": "#CE320B"
       }
     },
   },
